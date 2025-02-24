@@ -21,8 +21,6 @@ urlpatterns = [
 
     path('api/devices/', views.get_devices, name='get_devices'),
     path('api/devices/filter/', views.filter_device_data, name='filter_device_data'),
-
-    path('api/devices/', views.get_devices, name='get_devices'),
     path('api/devices/chart-data/', views.get_chart_data, name='get_chart_data'),
 
     

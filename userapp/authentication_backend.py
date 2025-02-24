@@ -1,5 +1,3 @@
-# authentication_backend.py
-
 from django.contrib.auth.backends import BaseBackend
 from django.contrib.auth.models import User
 from django.core.exceptions import ObjectDoesNotExist

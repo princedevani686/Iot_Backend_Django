@@ -21,7 +21,7 @@ class Device(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=255, unique=True)
     type = models.CharField(max_length=100)
-    status = models.CharField(max_length=50, choices=STATUS_CHOICES)
+    status = models.CharField(default=True)
     last_reading = models.JSONField(null=True, blank=True)
     created_at = models.DateTimeField(default=now)
     updated_at = models.DateTimeField(auto_now=True)
